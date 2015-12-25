@@ -1,0 +1,350 @@
+html,
+body {
+    height: 100%;
+}
+
+.form-control {
+	border-radius: 0;
+}
+.btn {
+	border-radius: 0;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -43px;
+    padding: 0 0 60px;
+}
+
+header {
+	background: url("../images/headImage.gif") center center #F08827 no-repeat;
+	height: 150px;
+}
+header a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+.footer {
+    background-color: #F08827;;
+    border-top: 3px solid #fff;
+	text-align: right;
+	font-size:10px;
+	padding: 10px 15px;
+	color:lightgray;
+}
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+.form-div {
+    padding: 15px 10px;
+	max-width: 500px;
+    width: 100%;
+	margin: auto;
+}
+.site-login {
+    padding: 15px 10px;
+    max-width: 500px;
+    width: 100%;
+	margin: auto;
+}
+.form-view {
+	padding: 10px;
+}
+.page-break {
+	border-bottom: 1px solid red;
+	margin: 10px 0;
+}
+.radio-group label {
+	display: block;
+}
+.radio-group .radio {
+	width:25%;
+	float:left;
+	margin-top:10px !important;
+}
+.check-group label {
+	display: block;
+}
+.check-group .checkbox {
+	width:50%;
+	float:left;
+	margin-top:10px !important;
+    padding-left: 5px;
+    word-wrap: break-word;
+}
+.radio-column {
+	text-align: center;
+	vertical-align: middle !important;
+}
+th {
+	text-align: center;
+	vertical-align: middle !important;
+}
+.form-div {
+	margin-top:10px;
+}
+.content {
+	padding: 20px 0;
+}
+.anket-form {
+	margin: 20px 0 50px 0;
+	border: 1px solid #ccc;
+}
+.anket-form .head{
+	height: 40px;
+	background-color: #eee;
+	padding: 10px;
+}
+.anket-form .foot{
+	background-color: #eee;
+	padding: 10px;
+}
+.anket-form .head .progress {
+	width: 30%;
+	margin-left:70%;
+}
+.anket-content {
+	padding: 20px 10px;
+}
+.radio-column {
+	cursor:pointer;
+}
+
+.questionary-print-fix{
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.questionary-print-fix td.form-control, .questionary-print-fix td.radio-column, .questionary-print-fix th.answer-heading{
+    width: 100%;
+}
+
+@media print {
+    .questionary-print-fix{
+        table-layout: fixed;
+        word-wrap: break-word;
+    }
+    .questionary-print-fix td.form-control, .questionary-print-fix td.radio-column, .questionary-print-fix th.answer-heading{
+        width: 90px!important;
+    }
+    .form-group{
+        page-break-inside: avoid;
+    }
+    header{
+        display: none;
+    }
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+    background-color: lightgray;
+}
+.table-striped > tbody > tr:nth-child(even) > td, .table-striped > tbody > tr:nth-child(even) > th {
+    background-color: #f9f9f9;
+}
+.form-group.vertical-group > .radio:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+.form-group.vertical-group > .radio:nth-child(even) {
+    background-color: lightgray;
+}
+.radio label, .checkbox label{
+    width: 100%;
+}
+
+
+
+
+
+@media (min-width: 60em) {
+    .form-group {
+        margin: 2%;
+    }
+    .questionary-print-fix td.form-control, .questionary-print-fix td.radio-column, .questionary-print-fix th.answer-heading {
+        width: 105px;
+    }
+}
+@media (min-width: 75em) {
+    .form-group {
+        margin: 2em auto;
+        max-width: 75em;
+    }
+    .questionary-print-fix td.form-control, .questionary-print-fix td.radio-column, .questionary-print-fix th.answer-heading {
+        width: 125px;
+    }
+}
+
+table.table {
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+@media (min-width: 70em) {
+    table.table {
+        font-size: 1em;
+    }
+    .questionary-print-fix td.form-control, .questionary-print-fix td.radio-column, .questionary-print-fix th.answer-heading {
+        width: 90px;
+    }
+}
+table.table thead {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0;
+    border: 0;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+@media (min-width: 60em) {
+    .radio label, .checkbox label{
+        width: auto;
+    }
+    table.table thead {
+        position: relative;
+        clip: auto;
+        height: auto;
+        width: auto;
+        overflow: auto;
+    }
+}
+table.table thead th {
+    font-weight: normal;
+    text-align: center;
+}
+table.table thead th:first-of-type {
+    text-align: left;
+}
+table.table tbody,
+table.table tr,
+table.table th,
+table.table td {
+    display: block;
+    padding: 0;
+    text-align: left;
+    white-space: normal;
+}
+@media (min-width: 60em) {
+    table.table tr {
+        display: table-row;
+    }
+}
+table.table th,
+table.table td {
+    padding: .5em;
+    vertical-align: middle;
+}
+@media (min-width: 40em) {
+    table.table th,
+    table.table td {
+        padding: .75em .5em;
+    }
+}
+@media (min-width: 60em) {
+    table.table th,
+    table.table td {
+        display: table-cell;
+        padding: .5em;
+    }
+}
+@media (min-width: 70em) {
+    table.table th,
+    table.table td {
+        padding: .75em .5em;
+    }
+}
+@media (min-width: 75em) {
+    table.table th,
+    table.table td {
+        padding: .75em;
+    }
+}
+table.table caption {
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+@media (min-width: 60em) {
+    table.table caption {
+        font-size: 1.5em;
+    }
+}
+table.table tfoot {
+    font-size: .8em;
+    font-style: italic;
+}
+@media (min-width: 70em) {
+    table.table tfoot {
+        font-size: .9em;
+    }
+}
+@media (min-width: 60em) {
+    table.table tbody {
+        display: table-row-group;
+    }
+}
+table.table tbody tr {
+    margin-bottom: 1em;
+}
+@media (min-width: 60em) {
+    table.table tbody tr {
+        display: table-row;
+    }
+}
+table.table tbody tr:last-of-type {
+    margin-bottom: 0;
+}
+@media (min-width: 60em) {
+    table.table tbody tr:nth-of-type(even) {
+    }
+}
+table.table tbody th[scope="row"] {
+}
+@media (min-width: 60em) {
+    table.table tbody th[scope="row"] {
+        text-align: left;
+    }
+}
+table.table tbody td {
+    text-align: right;
+}
+@media (min-width: 40em) {
+    table.table tbody td {
+    }
+}
+@media (min-width: 60em) {
+    table.table tbody td {
+        text-align: center;
+    }
+}
+table.table tbody td[data-type=currency] {
+    text-align: right;
+}
+table.table tbody td[data-title]:before {
+    content: attr(data-title);
+    float: left;
+    font-size: .8em;
+}
+@media (min-width: 40em) {
+    table.table tbody td[data-title]:before {
+        font-size: .9em;
+    }
+}
+@media (min-width: 60em) {
+    table.table tbody td[data-title]:before {
+        content: none;
+    }
+}

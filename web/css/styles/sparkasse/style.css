@@ -1,0 +1,88 @@
+/* ----------------- Changeable styles ---------------- */
+
+/* Background and Links */
+.wrap {
+    background-color: #FFFFFF;
+}
+
+a         { color: #CF2222; text-decoration:underline }
+a:visited { color: #CF2222; text-decoration:underline }
+a:active  { color: #CF2222; text-decoration:underline }
+a:hover   { color: #CF2222; text-decoration:none }
+/* End of Links */
+
+/* Graphical elements */
+hr { height: 1px; color: #F08827; }
+/* End of Graphical elements */
+
+/* Form Controls */
+input, select, textarea  {font-size: 10pt; font-family: Tahoma;}
+.form-control {
+    border-radius: 0;
+}
+.btn {
+    border-radius: 0;
+}
+.radio-group label {
+    display: block;
+}
+.radio-group .radio {
+    width:25%;
+    float:left;
+    margin-top:10px !important;
+}
+.check-group label {
+    display: block;
+}
+.check-group .checkbox {
+    width:50%;
+    float:left;
+    margin-top:10px !important;
+    padding-left: 5px;
+    word-wrap: break-word;
+}
+.radio-column {
+    text-align: center;
+    vertical-align: middle !important;
+}
+/* End of Form Controls */
+
+/* Styling of Questionnaire */
+.anket-form {
+    margin: 20px 0 50px 0;
+    border: 1px solid #ccc;
+}
+.anket-form .head{
+    height: 40px;
+    background-color: #eee;
+    padding: 10px;
+}
+.anket-form .foot{
+    background-color: #eee;
+    padding: 10px;
+}
+.anket-form .head .progress {
+    width: 30%;
+    margin-left:70%;
+}
+.anket-content {
+    padding: 20px 10px;
+}
+/* End of styling of Questionnaire */
+
+/* Header and Footer */
+header {
+    background: url("images/headImage.png") center left #CF2222 no-repeat;
+    height: 180px;
+}
+.footer {
+    background-color: #CF2222;
+    border-top: 3px solid #fff;
+    text-align: right;
+    font-size:10px;
+    padding: 10px 15px;
+    color:lightgray;
+}
+/* End of Header and Footer */
+
+/* ----------------- End of changeable Styles --------------- */
